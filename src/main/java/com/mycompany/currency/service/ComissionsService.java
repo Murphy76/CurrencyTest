@@ -28,7 +28,7 @@ public class ComissionsService {
 		try {
 			direct = rateRepo.save(direct);
 		} catch (Exception e) {
-			logger.warn("Comission write error.");
+			logger.warn("Comission write error.");	
 			throw new ErrorCreateObjectException("Comission write error.");
 		}
 		return com;

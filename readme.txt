@@ -58,6 +58,6 @@ Jbjects definition:
 	*direct ecchange currencyFrom to currencyTo should contains the amountFrom value and operationType "GIVE" 
 	*back ecchange currencyFrom to currencyTo should contains the desired amountTo value and operationType "GET"
 	
-	 
+	 Swagger API documentation available by url http://localhost:8080/swagger-ui.html
 	
 	
