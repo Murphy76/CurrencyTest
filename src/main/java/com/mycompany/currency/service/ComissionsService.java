@@ -2,6 +2,8 @@ package com.mycompany.currency.service;
 
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -14,6 +16,8 @@ import com.mycompany.currency.service.error.ErrorCreateObjectException;
 @Service
 public class ComissionsService {
 
+	Logger logger = LoggerFactory.getLogger(ComissionsService.class);
+	
 	@Autowired
 	RateRepository rateRepo;
 
@@ -24,7 +28,8 @@ public class ComissionsService {
 		try {
 			direct = rateRepo.save(direct);
 		} catch (Exception e) {
-			throw new ErrorCreateObjectException("Comission creation error.");
+			logger.warn("Comission write error.");
+			throw new ErrorCreateObjectException("Comission write error.");
 		}
 		return com;
 	}

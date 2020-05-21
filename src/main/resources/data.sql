@@ -1,2 +1,2 @@
-insert into user (id,user_name, password, active,roles) values (1,'user', '1', 1,"USER");
-insert into user (id,user_name, password, active,roles) values (2,'admin', '1', 1,"ADMIN, USER");
+INSERT INTO USER (ID,USER_NAME,PASSWORD,ACTIVE,ROLES) VALUES (1,'user', '1', 1,'ROLE_USER');
+INSERT INTO USER (ID,USER_NAME,PASSWORD,ACTIVE,ROLES) VALUES (2,'admin', '1', 1,'ROLE_ADMIN, ROLE_USER');

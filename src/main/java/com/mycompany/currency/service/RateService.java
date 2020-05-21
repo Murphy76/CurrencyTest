@@ -4,6 +4,8 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -14,7 +16,7 @@ import com.mycompany.currency.service.error.ErrorCreateObjectException;
 
 @Service
 public class RateService {
-
+	Logger logger = LoggerFactory.getLogger(RateService.class);
 	@Autowired
 	RateRepository rateRepo;
 
@@ -26,6 +28,7 @@ public class RateService {
 		try {
 			rateRepo.saveAll(Stream.of(direct, back).collect(Collectors.toList()));
 		} catch (Exception e) {
+			logger.warn("Write rate error");
 			throw new ErrorCreateObjectException("Set rate error");
 		}
 		return "ok";
