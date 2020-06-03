@@ -24,14 +24,14 @@ Available Currency signature:
 	EUR, USD,  UAH,  RUB	
 
 Endpoints:
-	GET   /api/comissions - get List of defined comissions
-	POST  /api/comissions - set comission (consumes Comission object)
+	GET   /api/commissions - get List of defined commissions
+	POST  /api/comissions - set commission (consumes Commission object)
 	GET   /api/exchange-rates - get List of defined rates
 	POST  /api/exchange-rates - set rate (consumes ExchangeRate object)
 	POST  /api/exchange - request for currency exchange (consumes ExchangeRequest )
 	
 Jbjects definition:
-	Comission:
+	Commission:
 	{
 		"commissionPt" : number,
 		"from": Currency 

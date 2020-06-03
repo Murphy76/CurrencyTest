@@ -16,14 +16,8 @@ public class CurrencyExchangeApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(CurrencyExchangeApplication.class, args);
 	}
-//	@Bean
-//	public PropertySourcesPlaceholderConfigurer propertySourcesPlaceholderConfigurer() {
-//		PropertySourcesPlaceholderConfigurer propertySourcesPlaceholderConfigurer = new PropertySourcesPlaceholderConfigurer();
-//		propertySourcesPlaceholderConfigurer.setLocations(new FileSystemResource("./cfg/app.properties"));
-//		propertySourcesPlaceholderConfigurer.setIgnoreUnresolvablePlaceholders(true);
-//		propertySourcesPlaceholderConfigurer.setIgnoreResourceNotFound(true);
-//		return propertySourcesPlaceholderConfigurer;
-//	}
+	
+	
 
 
 }

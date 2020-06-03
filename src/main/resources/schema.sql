@@ -12,7 +12,7 @@ CREATE TABLE `user` (
 
 CREATE TABLE `rates` (
   `id` int(11) NOT NULL,
-  `comissions` decimal(5,2) DEFAULT NULL,
+  `commissions` decimal(5,2) DEFAULT NULL,
   `curr_from` int(11) DEFAULT NULL,
   `curr_to` int(11) DEFAULT NULL,
   `rate` decimal(10,3) DEFAULT NULL,
