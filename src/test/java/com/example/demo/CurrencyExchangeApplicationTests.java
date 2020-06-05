@@ -139,7 +139,7 @@ public class CurrencyExchangeApplicationTests {
 		ResponseEntity<String> responseEntity = restTemplate.withBasicAuth(username, password).exchange(url,
 				HttpMethod.POST, requestEntity, String.class);
 
-		assertEquals(HttpStatus.OK, responseEntity.getStatusCode());
+		assertEquals(HttpStatus.CREATED, responseEntity.getStatusCode());
 	}
 
 	@Test
@@ -171,7 +171,7 @@ public class CurrencyExchangeApplicationTests {
 		ResponseEntity<String> responseEntity = restTemplate.withBasicAuth(username, password).exchange(url,
 				HttpMethod.POST, requestEntity, String.class);
 
-		assertEquals(HttpStatus.OK, responseEntity.getStatusCode());
+		assertEquals(HttpStatus.CREATED, responseEntity.getStatusCode());
 	}
 
 	@Test

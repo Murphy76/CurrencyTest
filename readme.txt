@@ -59,5 +59,15 @@ Jbjects definition:
 	*back ecchange currencyFrom to currencyTo should contains the desired amountTo value and operationType "GET"
 	
 	 Swagger API documentation available by url http://localhost:8080/swagger-ui.html
-	
+	 
+	 ----------Docker------
+	 Build paalication
+	 Open terminal window
+	 Change working directory to root project location.
+	 Execute command   docker build -t currencyimg .
+	 Execute docker run --name currency -d -p 8080:8080 currencyimg
+	 To stop container execute docker stop currency
+	 
+	 
+	 
 	

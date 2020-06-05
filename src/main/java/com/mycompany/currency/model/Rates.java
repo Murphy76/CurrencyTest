@@ -61,7 +61,7 @@ public class Rates {
 
 	public void setRate(BigDecimal rate) {
 		if (rate != null && rate.scale()<=3) {
-			this.rate = rate;
+			this.rate = rate.setScale(3);
 		}else {
 			throw new ErrorCreateObjectException("Error");
 		}
