@@ -64,9 +64,11 @@ Jbjects definition:
 	 Build paalication
 	 Open terminal window
 	 Change working directory to root project location.
-	 Execute command   docker build -t currencyimg .
-	 Execute docker run --name currency -d -p 8080:8080 currencyimg
-	 To stop container execute docker stop currency
+	 Build docker image     docker build -t currencyimg .
+	 Create docker volume   docker volume create currencydb
+	 Ececute                docker run --rm --name currency -v currencydb:/usr/src/app/data -d -p 8080:8080 currencyimg
+	 To stop container execute 
+	                        docker stop currency
 	 
 	 
 	 
